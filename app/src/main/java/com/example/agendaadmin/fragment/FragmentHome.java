@@ -1,5 +1,6 @@
 package com.example.agendaadmin.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,12 +10,15 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.agendaadmin.R;
+import com.example.agendaadmin.activity.ServicosActivity;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentHome extends Fragment {
+public class FragmentHome extends Fragment{
+
+
 
     public FragmentHome() {
     }
@@ -24,8 +28,11 @@ public class FragmentHome extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+
         return view;
     }
+
+
 
 
 }

@@ -44,6 +44,7 @@ public class HorariosActivity extends AppCompatActivity implements AdapterRecycl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horarios);
+        getSupportActionBar().setTitle("Escolha o horário");
 
         recyclerView = findViewById(R.id.recyclerView);
         database = FirebaseDatabase.getInstance();

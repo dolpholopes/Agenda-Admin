@@ -4,125 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="15dp"
+    android:orientation="vertical"
     tools:context=".activity.RemoverServicoActivity">
 
-    <TextView
-        android:textColor="@color/colorBlack"
-        android:text="Nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/textAlterarRemoverNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorBlack"
-        android:text="Telefone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/textAlterarRemoverTelefone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <CheckBox
-        android:layout_marginTop="10dp"
-        android:checked="true"
-        android:id="@+id/checkAlterarRemoverWpp"
-        android:text="Possui WhatsApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:textColor="@color/colorBlack"
-        android:layout_marginTop="10dp"
-        android:text="serviço"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <LinearLayout
-        android:orientation="horizontal"
+        android:layout_weight="4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <CheckBox
-            android:layout_weight="1"
-            android:id="@+id/checkBarba"
-            android:text="Barba"
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/logo_meu_barbeiro"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <CheckBox
-            android:layout_weight="1"
-            android:id="@+id/checkCorte"
-            android:text="Corte"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <CheckBox
-            android:layout_weight="1"
-            android:id="@+id/checkPigmentacao"
-            android:text="Pigmentacao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <CheckBox
-            android:layout_weight="1"
-            android:id="@+id/checkPlatinacao"
-            android:text="Platinado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
+
     <LinearLayout
-        android:orientation="horizontal"
+        android:layout_weight="3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
-        <androidx.cardview.widget.CardView
-            android:layout_weight="1"
-            android:layout_marginTop="30dp"
-            android:id="@+id/cardViewAlterar"
-            android:foreground="?attr/selectableItemBackground"
-            app:cardUseCompatPadding="true"
-            app:cardElevation="2dp"
-            app:cardCornerRadius="2dp"
-            android:layout_gravity="center"
-            android:layout_width="145dp"
-            android:layout_height="55dp"
-            android:background="@color/colorPrimary">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:text="Nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textAlterarRemoverNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="Telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textAlterarRemoverTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:id="@+id/checkAlterarRemoverWpp"
+            android:text="Possui WhatsApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:text="serviço"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-            <TextView
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textColor="@color/colorBlack"
-                android:text="Alterar"
-                android:layout_width="match_parent"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/checkBarba"
+                android:text="Barba"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/checkCorte"
+                android:text="Corte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/checkPigmentacao"
+                android:text="Pigmentacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/checkPlatinacao"
+                android:text="Platinado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView
-            android:layout_weight="1"
-            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/colorPrimary"
             android:id="@+id/cardViewRemover"
             android:foreground="?attr/selectableItemBackground"
             app:cardUseCompatPadding="true"
             app:cardElevation="2dp"
             app:cardCornerRadius="2dp"
             android:layout_gravity="center"
-            android:layout_width="145dp"
-            android:layout_height="55dp"
-            >
-
-
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
             <TextView
+                android:textStyle="bold"
+                android:textSize="16sp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Remover"
-                android:textColor="@color/colorBlack"
+                android:text="Remover agendamento"
+                android:textColor="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-
         </androidx.cardview.widget.CardView>
+
+
     </LinearLayout>
+
+
 
 
 

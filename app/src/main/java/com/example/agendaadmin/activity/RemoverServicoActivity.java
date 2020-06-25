@@ -1,5 +1,6 @@
 package com.example.agendaadmin.activity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -44,6 +45,7 @@ public class RemoverServicoActivity extends AppCompatActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_remover_servico);
+        getSupportActionBar().setTitle("Horário agendado");
 
         data = getIntent().getStringArrayListExtra("data");
         database = FirebaseDatabase.getInstance();
@@ -57,6 +59,7 @@ public class RemoverServicoActivity extends AppCompatActivity implements View.On
         checkPigmentar = findViewById(R.id.checkPigmentacao);
         checkPlatinar = findViewById(R.id.checkPlatinacao);
         cardViewRemover = findViewById(R.id.cardViewRemover);
+
 
         cardViewRemover.setOnClickListener(this);
 
@@ -75,8 +78,11 @@ public class RemoverServicoActivity extends AppCompatActivity implements View.On
             case R.id.cardViewRemover:
                 apagarAgendamento();
                 break;
+
         }
     }
+
+
 
 
     private void obterDadosAgendamento(){

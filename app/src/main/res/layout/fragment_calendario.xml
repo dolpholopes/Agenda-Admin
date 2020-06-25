@@ -20,8 +20,8 @@
 
         <TextView
             android:textColor="@color/colorBlack"
-            android:text="Agende seu horario"
-            android:textSize="20sp"
+            android:text="Selecione o dia"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_width="match_parent"

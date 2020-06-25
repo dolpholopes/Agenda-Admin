@@ -37,6 +37,7 @@ public class AgendamentoServicoActivity extends AppCompatActivity implements Vie
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agendamento_servico);
+        getSupportActionBar().setTitle("Faça o agendamento");
 
         data = getIntent().getStringArrayListExtra("data");
 
